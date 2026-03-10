@@ -1,21 +1,21 @@
-#include<stdio.h>
+
+#include <iostream>
+
+using namespace std;
 
 int main()
 {
-    int i,n;
-    int fact=1;
-    printf("display factorial 1 to 10:\n");
-    scanf("%d",&n);
-    {
- for(i=1;i<=n;i++);
+    int i, j;
 
-   {
-    fact=fact*i;
-   }
-   
+    for (i = 3; i < 11; i++)
+    {
+        int fact = 1;
+        for (j = 1; j <= i; j++)
         {
-            printf("factorial=%d",fact);
+            fact *= j;
         }
-        return 0;
+        cout << "Factorial of " << i << " is " << fact << "." << endl;
     }
+
+    return 0;
 }
